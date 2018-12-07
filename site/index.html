@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zampoña Panflute</title>
+    <style>
+      body {
+        background: black;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding-bottom: 40px;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding-top: 0;
+        }
+      }
+
+      #header {
+        width: 100%;
+        margin: 0 auto 0;
+      }
+
+      #header h1 {
+        background: url(images/zampona.jpg) no-repeat 50% -40px transparent;
+        height: 98px;
+        text-indent: -10000px;
+        margin-top: 20px;
+        overflow: hidden;
+        color: white;
+      }
+
+      h1 .slogan {
+        color: white;
+        display: block;
+        text-indent: 0;
+        font-size: 10pt;
+        position: relative;
+        top: 46px;
+        left: calc(50% - 60px);
+      }
+
+      .page-header {
+        border-bottom: solid #333 1px;
+      }
+
+      footer {
+        color: #ccc;
+        font-size: 75%;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1>
+        Zampoña
+        <span class="slogan">The original panflute from the Andes!</span>
+      </h1>
+    </header>
+    <zampona-element></zampona-element>
+    <script src="element/zampona-element.min.js"></script>
+</body>
+</html>
